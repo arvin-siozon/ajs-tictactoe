@@ -1,0 +1,81 @@
+<div
+  class="game-ui"
+  fxLayout="row wrap"
+  fxLayoutAlign="start center"
+  fxLayoutAlign.lt-md="center center"
+  fxLayoutGap="20px"
+>
+  <div class="game-board">
+    <main>
+      <app-square
+        *ngFor="let val of squares; let i = index"
+        [value]="val"
+        [disabled]="disable"
+      ></app-square>
+    </main>
+  </div>
+  <div
+    [ngClass]="{
+      'player-x': boardMarker === 'X',
+      'player-o': boardMarker === 'O'
+    }"
+  ></div>
+</div>
+<div class="players-turn">
+  <p>Player {{ boardMarker }}'s turn!</p>
+</div>
+<score-board class="score-board"></score-board>
+<div class="author-info">
+  <p class="author-name">Author: Arvin Siozon</p>
+
+  <p class="publish-date">Publish date: 08/25/2020</p>
+</div>
+<div class="history">
+  <div class="title">
+    <p>Tic-tac-toe</p>
+  </div>
+  <div class="desc">
+    <p>
+      Tic-tac-toe (American English), noughts and crosses (Commonwealth
+      English), or Xs and Os is a paper-and-pencil game for two players, X and
+      O, who take turns marking the spaces in a 3×3 grid. The player who
+      succeeds in placing three of their marks in a horizontal, vertical, or
+      diagonal row is the winner.<br />
+    </p>
+    <p>
+      In order to win the game, a player must place three of their marks in a
+      horizontal, vertical, or diagonal row.
+    </p>
+    <p>
+      Because of the simplicity of tic-tac-toe, it is often used as a
+      pedagogical tool for teaching the concepts of good sportsmanship and the
+      branch of artificial intelligence that deals with the searching of game
+      trees. It is straightforward to write a computer program to play
+      tic-tac-toe perfectly or to enumerate the 765 essentially different
+      positions (the state space complexity) or the 26,830 possible games up to
+      rotations and reflections (the game tree complexity) on this space. If
+      played optimally by both players, the game always ends in a draw, making
+      tic-tac-toe a futile game.
+    </p>
+
+    <p>
+      The game can be generalized to an m,n,k-game in which two players
+      alternate placing stones of their own color on an m×n board, with the goal
+      of getting k of their own color in a row. Tic-tac-toe is the
+      (3,3,3)-game.[3] Harary's generalized tic-tac-toe is an even broader
+      generalization of tic-tac-toe. It can also be generalized as a nd game.
+      Tic-tac-toe is the game where n equals 3 and d equals 2. It can be
+      generalised even further by playing on an arbitrary incidence structure,
+      where rows are lines and cells are points. Tic-tac-toe is the game given
+      by the incidence structure shown to the right, consisting of nine points,
+      three horizontal lines, three vertical lines, and two diagonal lines, each
+      line consisting of at least three points.
+    </p>
+  </div>
+</div>
+<div class="note">
+  <p>
+    Note: Use 0-8 as input. 0 as first box, 1 as second box, 2 as third box and
+    so on...
+  </p>
+</div>

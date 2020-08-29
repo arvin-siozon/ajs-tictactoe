@@ -1,0 +1,13 @@
+<div class="square">
+  <div
+    class="square-item"
+    [ngClass]="{
+      'square-empty': !value,
+      'square-x': value && value.player === 'X' && !value.win,
+      'square-o': value && value.player === 'O' && !value.win,
+      'square-win': value && value.win
+    }"
+  >
+    <p class="player-marker">{{ value && value.player }}</p>
+  </div>
+</div>

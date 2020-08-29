@@ -1,0 +1,9 @@
+{
+  "/weatherforecast": {
+    "target": "https://localhost:44379",
+    "secure": false,
+    "pathRewrite": {
+      "^/weatherforecast": ""
+    }
+  }
+}

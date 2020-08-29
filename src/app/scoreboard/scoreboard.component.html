@@ -1,0 +1,8 @@
+<div class="scorecard" *ngFor="let score of [playerScores$ | async]">
+  <p [ngClass]="{ winning: score.xPlayer > score.oPlayer }">
+    Player X: {{ score.xPlayer }}
+  </p>
+  <p [ngClass]="{ winning: score.oPlayer > score.xPlayer }">
+    Player O: {{ score.oPlayer }}
+  </p>
+</div>

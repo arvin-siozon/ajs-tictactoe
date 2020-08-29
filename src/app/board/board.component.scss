@@ -1,0 +1,63 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 12rem);
+}
+app-square {
+  height: 12rem;
+}
+.game-board {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+}
+
+.players-turn {
+  position: absolute;
+  top: 520px;
+  color: whitesmoke;
+  font-family: georgia, garamond, serif;
+  font-size: 20px;
+  left: 170px;
+}
+.score-board {
+  position: absolute;
+  top: 100px;
+  left: 156px;
+}
+.author-info {
+  position: absolute;
+  top: 640px;
+  right: 100px;
+  color: whitesmoke;
+  font-family: georgia, garamond, serif;
+  font-size: 20px;
+  text-align: right;
+}
+.title {
+  position: absolute;
+  top: 150px;
+  left: 650px;
+  color: whitesmoke;
+  font-family: georgia, garamond, serif;
+  font-size: 30px;
+}
+
+.desc {
+  width: 50%;
+  font-family: georgia, garamond, serif;
+  position: absolute;
+  top: 190px;
+  left: 650px;
+  color: whitesmoke;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.note {
+  width: 500px;
+  position: absolute;
+  top: 600px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  left: 170px;
+}
